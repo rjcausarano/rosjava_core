@@ -416,7 +416,7 @@ public class DefaultNode implements ConnectedNode {
     // NOTE(damonkohler): We don't want to raise potentially spurious
     // exceptions during shutdown that would interrupt the process. This is
     // simply best effort cleanup.
-    slaveServer.shutdown();
+    //slaveServer.shutdown();
     topicParticipantManager.shutdown();
     for (ServiceServer<?, ?> serviceServer : serviceManager.getServers()) {
       try {
